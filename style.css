@@ -1,0 +1,960 @@
+:root {
+  --pri: #f9d1bb;
+  --sec: #FFB4A2;
+  --ter1: hsla(338, 19%, 43%, 0.93);
+  --ter2: #89646c;
+}
+
+@font-face {
+  font-family: aeonik;
+  src: url(./fonts/fonnts.com-Aeonik-Regular.ttf);
+  font-weight: 450;
+}
+@font-face {
+  font-family: aeonik;
+  src: url(./fonts/fonnts.com-Aeonik-Bold.ttf);
+  font-weight: 800;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--pri);
+  font-family: aeonik;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: var(--ter2);
+  position: relative;
+}
+
+.allelems {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  position: absolute;
+}
+.allelems .nav {
+  width: 98%;
+  height: 8%;
+  position: absolute;
+  z-index: 1;
+  top: 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--ter2);
+  box-shadow: 0 1px 2px var(--pri);
+  border-radius: 11px;
+  padding: 15px 20px;
+}
+.allelems .nav h1 {
+  width: 80%;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 0.15%;
+  word-spacing: 5px;
+  padding: 20px;
+}
+.allelems .nav .buttons-right {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.allelems .nav .buttons-right .theme {
+  background-color: var(--sec);
+  color: var(--ter1);
+  height: 30px;
+  font-size: 18px;
+  font-weight: 800;
+  word-spacing: 1px;
+  letter-spacing: 0px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 0px 10px;
+  border: 1px solid var(--ter2);
+  box-shadow: 0px 1px 1px var(--sec);
+}
+.allelems .nav .buttons-right .theme:hover {
+  scale: 0.97;
+  transition: 0.4s ease-in-out;
+}
+.allelems .nav .buttons-right .dark-light {
+  background-color: var(--ter2);
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  opacity: 0.75;
+}
+.allelems .nav .buttons-right .dark-light img {
+  height: 100%;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.allelems .nav .buttons-right .dark-light:hover {
+  scale: 0.9;
+  transition: 0.2s ease-in-out;
+}
+.allelems .nav:hover {
+  scale: 0.997;
+  transition: 0.2s ease-in-out;
+}
+.allelems .upper-main {
+  width: 98%;
+  height: 40%;
+  top: 13%;
+  border-radius: 11px;
+  box-shadow: 0 1px 2px var(--pri);
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  background-image: url("./assets/day-sky.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+.allelems .upper-main .header-left h1 {
+  color: var(--ter2);
+  font-size: 70px;
+  word-spacing: 2px;
+}
+.allelems .upper-main .header-left h2 {
+  color: var(--ter2);
+  font-size: 40px;
+  word-spacing: 2px;
+}
+.allelems .upper-main .header-left h3 {
+  color: var(--ter2);
+  font-size: 30px;
+  font-weight: 450;
+}
+.allelems .upper-main .header-right {
+  margin-right: 20px;
+}
+.allelems .upper-main .header-right .des {
+  display: flex;
+  align-items: center;
+}
+.allelems .upper-main .header-right .des img {
+  width: 50px;
+  aspect-ratio: 1;
+}
+.allelems .upper-main .header-right .des h1 {
+  color: var(--ter2);
+  font-size: 40px;
+  word-spacing: 2px;
+  margin-bottom: 5px;
+}
+.allelems .upper-main .header-right h2 {
+  color: var(--ter2);
+  font-size: 25px;
+  word-spacing: 2px;
+}
+.allelems .upper-main .header-right h3 {
+  color: var(--ter2);
+  font-size: 15px;
+  font-weight: 450;
+  opacity: 1.1;
+}
+.allelems .upper-main:hover {
+  scale: 0.997;
+  transition: 0.4s ease-in-out;
+}
+.allelems .lower-main {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 41%;
+  position: absolute;
+  z-index: 1;
+  top: 56%;
+}
+.allelems .lower-main .func {
+  border-radius: 10px;
+  height: 100%;
+  width: 18%;
+  font-size: 30px;
+  background-color: var(--ter1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0 1px 2px var(--pri);
+  cursor: pointer;
+}
+.allelems .lower-main .func h2 {
+  position: absolute;
+  bottom: 3%;
+  font-weight: 200px;
+  font-size: 32px;
+}
+.allelems .lower-main .func img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.allelems .lower-main .func:hover {
+  transition: 0.4s ease-in-out;
+  scale: 0.97;
+}
+.allelems::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 0%;
+  background-color: var(--sec);
+  filter: blur(100px);
+  transform: scale(1.1);
+}
+
+.fullelems {
+  height: 100%;
+  width: 100%;
+  background-color: var(--ter2);
+  padding: 20px;
+  display: none;
+  position: absolute;
+}
+
+.button {
+  background-color: var(--pri);
+  color: var(--ter2);
+  border: none;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  position: absolute;
+  right: 3%;
+  cursor: pointer;
+  font-weight: 800;
+  border: 1px solid var(--ter2);
+  box-shadow: 0px 1px 1px var(--sec);
+}
+
+.button:hover {
+  transition: 0.3s ease-in-out;
+  scale: 0.95;
+  background-color: var(--pri);
+  border: 2px solid var(--ter2);
+}
+
+.todo-fullpage {
+  position: absolute;
+  z-index: 8;
+}
+.todo-fullpage #upper {
+  display: flex;
+  justify-content: flex-start;
+}
+.todo-fullpage #upper h2 {
+  width: 50%;
+  font-size: 40px;
+  font-weight: 850;
+}
+.todo-fullpage #upper #det {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.todo-fullpage #upper #det h4 {
+  font-size: 15px;
+  font-weight: 450;
+}
+.todo-fullpage .todo-container {
+  height: 90%;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.todo-fullpage .todo-container .addTask {
+  width: 25%;
+  height: 100%;
+  background-color: var(--ter1);
+  box-shadow: 0 2px 5px var(--pri);
+  border-radius: 10px;
+}
+.todo-fullpage .todo-container .addTask form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  color: var(--ter2);
+}
+.todo-fullpage .todo-container .addTask form input {
+  color: var(--ter2);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: var(--pri);
+  border: 1px solid var(--ter2);
+  box-shadow: 2px 2px 5px var(--pri);
+  font-size: 16px;
+  outline: none;
+}
+.todo-fullpage .todo-container .addTask form input::-moz-placeholder {
+  opacity: 0.47;
+  font-weight: 300;
+}
+.todo-fullpage .todo-container .addTask form input::placeholder {
+  opacity: 0.47;
+  font-weight: 300;
+}
+.todo-fullpage .todo-container .addTask form input:hover {
+  background-color: var(--sec);
+  border: 2px solid var(--ter2);
+  transition: 0.2s ease-in-out;
+}
+.todo-fullpage .todo-container .addTask form textarea {
+  color: var(--ter2);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid var(--ter2);
+  box-shadow: 2px 2px 5px var(--pri);
+  background-color: var(--pri);
+  resize: none;
+}
+.todo-fullpage .todo-container .addTask form textarea:hover {
+  background-color: var(--sec);
+  border: 2px solid var(--ter2);
+  transition: 0.2s ease-in-out;
+}
+.todo-fullpage .todo-container .addTask form textarea::-moz-placeholder {
+  opacity: 0.47;
+  font-weight: 300;
+}
+.todo-fullpage .todo-container .addTask form textarea::placeholder {
+  opacity: 0.47;
+  font-weight: 300;
+}
+.todo-fullpage .todo-container .addTask form .imp-sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-fullpage .todo-container .addTask form .imp-sub .mark-imp {
+  margin: 0px;
+  padding: 0px;
+  font-size: 13px;
+  font-weight: 800;
+  width: 40%;
+  color: var(--pri);
+}
+.todo-fullpage .todo-container .addTask form .imp-sub .mark-imp #check {
+  scale: 1.3;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+.todo-fullpage .todo-container .addTask form .imp-sub .mark-imp label {
+  padding-left: 10px;
+  height: 10px;
+  width: auto;
+  cursor: pointer;
+}
+.todo-fullpage .todo-container .addTask form .imp-sub button {
+  width: 40%;
+  padding: 8px;
+  margin-top: 15px;
+  border-radius: 10px;
+  background-color: var(--pri);
+  color: var(--ter2);
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid var(--ter2);
+  box-shadow: 2px 2px 5px var(--pri);
+  font-weight: 800;
+}
+.todo-fullpage .todo-container .addTask form .imp-sub button:hover {
+  transition: 0.2s ease-in-out;
+  background-color: var(--sec);
+  border: 2px solid var(--ter2);
+  scale: 0.95;
+}
+.todo-fullpage .todo-container .addTask:hover {
+  transition: 0.4s ease-in-out;
+  scale: 0.995;
+}
+.todo-fullpage .todo-container .allTask {
+  width: 73%;
+  height: 100%;
+  background-color: var(--ter1);
+  box-shadow: 0 2px 5px var(--pri);
+  border-radius: 10px;
+  padding: 0px 10px;
+  padding-bottom: 10px;
+  overflow: auto;
+  scrollbar-width: none;
+}
+.todo-fullpage .todo-container .allTask::-webkit-scrollbar {
+  display: none;
+}
+.todo-fullpage .todo-container .allTask h1 {
+  margin: 10px;
+  padding: 20px;
+  opacity: 0.7;
+}
+.todo-fullpage .todo-container .allTask .tasks {
+  margin-top: 10px;
+  border-radius: 7px;
+  padding: 5px;
+  width: 100%;
+  height: 10%;
+  background-color: var(--pri);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 0 2px var(--pri);
+  border: 1px solid var(--ter2);
+}
+.todo-fullpage .todo-container .allTask .tasks h3 {
+  width: 10%;
+  font-size: 20px;
+  color: var(--ter2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.todo-fullpage .todo-container .allTask .tasks p {
+  width: 80%;
+  font-size: 18px;
+  font-weight: 450;
+  color: var(--ter2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.todo-fullpage .todo-container .allTask .tasks .ending {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.todo-fullpage .todo-container .allTask .tasks .ending .imp-icon-true {
+  opacity: 0.9;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+.todo-fullpage .todo-container .allTask .tasks .ending .imp-icon-false {
+  opacity: 0.15;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+.todo-fullpage .todo-container .allTask .tasks .ending .but-true {
+  width: 22px;
+  height: 22px;
+  border-radius: 22px;
+  border: 1px solid var(--ter2);
+  box-shadow: 1px 2px 2px var(--ter2);
+  cursor: pointer;
+  background-color: rgba(54, 202, 11, 0.968627451);
+}
+.todo-fullpage .todo-container .allTask .tasks .ending .but-true:hover {
+  scale: 1.05;
+  transition: 0.4s ease-in-out;
+}
+.todo-fullpage .todo-container .allTask .tasks .ending .but-false {
+  width: 22px;
+  height: 22px;
+  border-radius: 22px;
+  border: 1px solid var(--ter2);
+  box-shadow: 1px 2px 2px var(--ter2);
+  cursor: pointer;
+  background-color: white;
+}
+.todo-fullpage .todo-container .allTask .tasks .ending .but-false:hover {
+  scale: 1.05;
+  transition: 0.4s ease-in-out;
+}
+.todo-fullpage .todo-container .allTask .tasks:hover {
+  background-color: var(--sec);
+  border: 2px solid var(--ter2);
+  scale: 1.01;
+  transition: 0.4s ease-in-out;
+}
+.todo-fullpage .todo-container .allTask:hover {
+  transition: 0.4s ease-in-out;
+  scale: 0.995;
+}
+.todo-fullpage::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 90%;
+  height: 65%;
+  top: 30%;
+  left: 2.5%;
+  background-color: var(--sec);
+  filter: blur(100px);
+  transform: scale(1.1);
+}
+
+.planner-fullpage {
+  position: absolute;
+  z-index: 8;
+}
+.planner-fullpage h2 {
+  font-size: 40px;
+  font-weight: 850;
+}
+.planner-fullpage .day-planner {
+  position: absolute;
+  z-index: 4;
+  top: 13%;
+  left: 1.55%;
+  background-color: var(--ter1);
+  height: 80%;
+  width: 95.5%;
+  margin-top: 23px;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  scrollbar-width: none;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.planner-fullpage .day-planner::-webkit-scrollbar {
+  display: none;
+}
+.planner-fullpage .day-planner .day-planner-time {
+  margin: 25px 0px;
+  height: 8%;
+  width: 46%;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  position: relative;
+}
+.planner-fullpage .day-planner .day-planner-time p {
+  padding-top: 0px;
+  position: absolute;
+  left: 1.25%;
+  top: 0.1%;
+  font-size: 14px;
+  color: var(--ter1);
+  opacity: 0.8;
+}
+.planner-fullpage .day-planner .day-planner-time input {
+  font-size: 22px;
+  padding: 20px 30px;
+  width: 100%;
+  border-radius: 9px;
+  border: none;
+  background-color: var(--sec);
+  color: var(--ter2);
+  border: 1px solid var(--ter2);
+  box-shadow: 2px 2px 5px var(--pri);
+  outline: none;
+  overflow: auto;
+}
+.planner-fullpage .day-planner .day-planner-time input::-moz-placeholder {
+  opacity: 0.47;
+  font-weight: 300;
+}
+.planner-fullpage .day-planner .day-planner-time input::placeholder {
+  opacity: 0.47;
+  font-weight: 300;
+}
+.planner-fullpage .day-planner .day-planner-time input:hover {
+  background-color: var(--sec);
+  border: 2px solid var(--ter2);
+  transition: 0.2s ease-in-out;
+}
+.planner-fullpage::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  width: 90%;
+  height: 60%;
+  top: 30%;
+  left: 5%;
+  background-color: var(--sec);
+  filter: blur(100px);
+  transform: scale(1.1);
+}
+
+.motivation-fullpage {
+  position: absolute;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.motivation-fullpage h2 {
+  font-size: 40px;
+  font-weight: 850;
+}
+.motivation-fullpage .motivation-wrapper {
+  position: relative;
+  height: 90%;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.motivation-fullpage .motivation-wrapper .motivation-card {
+  position: absolute;
+  z-index: 2;
+  background-color: var(--sec);
+  scale: 1.05;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 70%;
+  max-height: 80%;
+  min-width: 30%;
+  min-height: 50%;
+  overflow: hidden;
+  border: 1px solid var(--ter2);
+  box-shadow: 0px 1px 1px var(--sec);
+}
+.motivation-fullpage .motivation-wrapper .motivation-card .m1 {
+  width: 100%;
+  border-radius: 20px;
+  background-color: var(--ter1);
+  padding: 5px;
+  margin: 5px;
+  position: relative;
+}
+.motivation-fullpage .motivation-wrapper .motivation-card .m1 h2 {
+  width: 100%;
+  font-size: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.motivation-fullpage .motivation-wrapper .motivation-card .m1 img {
+  position: absolute;
+  width: 5%;
+  aspect-ratio: 1;
+  opacity: 0.2;
+  top: 11.5%;
+  right: 4%;
+  scale: 0.9;
+}
+.motivation-fullpage .motivation-wrapper .motivation-card .m2 {
+  width: 100%;
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.motivation-fullpage .motivation-wrapper .motivation-card .m2 p {
+  max-width: 100%;
+  font-size: 30px;
+  color: var(--ter2);
+  text-align: justify;
+}
+.motivation-fullpage .motivation-wrapper .motivation-card .m3 {
+  width: 100%;
+  margin-top: 30px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.motivation-fullpage .motivation-wrapper .motivation-card .m3 h3 {
+  color: var(--ter2);
+  width: auto;
+  border-radius: 30px;
+  font-size: 30px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+.motivation-fullpage .motivation-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  top: 10%;
+  left: 5%;
+  background-color: var(--sec);
+  filter: blur(100px);
+  transform: scale(1.1);
+}
+
+.pomodoro-fullpage {
+  position: absolute;
+  z-index: 8;
+}
+.pomodoro-fullpage h2 {
+  font-size: 40px;
+  font-weight: 850;
+}
+.pomodoro-fullpage .pomo-timer {
+  position: absolute;
+  z-index: 2;
+  background-color: var(--ter2);
+  width: 50%;
+  height: 65%;
+  top: 18%;
+  left: 25%;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid var(--ter2);
+  box-shadow: 0px 2px 5px var(--pri);
+}
+.pomodoro-fullpage .pomo-timer .wrapped {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--sec);
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px var(--pri);
+}
+.pomodoro-fullpage .pomo-timer .wrapped .dummy {
+  width: 70%;
+}
+.pomodoro-fullpage .pomo-timer .wrapped .dummy h3 {
+  width: 90%;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  background-color: var(--ter2);
+  border: 1px solid var(--pri);
+  box-shadow: 1px 2px 5px var(--pri);
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+.pomodoro-fullpage .pomo-timer .wrapped h1 {
+  color: var(--ter2);
+  font-size: 100px;
+  font-weight: 800;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding: 0px;
+  margin-bottom: 5px;
+}
+.pomodoro-fullpage .pomo-timer .wrapped .but {
+  margin-bottom: 30px;
+  padding: 10px;
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+}
+.pomodoro-fullpage .pomo-timer .wrapped .but .ctrl {
+  width: 70px;
+  height: 70px;
+  background-color: var(--ter2);
+  background-color: var(--pri);
+  border-radius: 30%;
+  outline: none;
+  border: 1px solid var(--ter2);
+  box-shadow: 1px 2px 5px var(--ter2);
+  padding: 10px;
+  cursor: pointer;
+}
+.pomodoro-fullpage .pomo-timer .wrapped .but .ctrl img {
+  width: 100%;
+  scale: 1.1;
+  aspect-ratio: 1;
+  opacity: 0.4;
+}
+.pomodoro-fullpage .pomo-timer .wrapped .but .ctrl:hover {
+  transition: 0.3s ease-in-out;
+  scale: 0.95;
+  background-color: var(--pri);
+  border: 2px solid var(--ter2);
+}
+.pomodoro-fullpage .pomo-timer:hover {
+  scale: 0.997;
+  transition: 0.3s ease-in-out;
+}
+.pomodoro-fullpage::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 50%;
+  height: 65%;
+  top: 18%;
+  left: 25%;
+  background-color: var(--sec);
+  filter: blur(100px);
+  transform: scale(1.1);
+}
+
+.goal-fullpage {
+  position: absolute;
+  z-index: 8;
+}
+.goal-fullpage h2 {
+  font-size: 40px;
+  font-weight: 850;
+}
+.goal-fullpage .goals-wrapper {
+  position: absolute;
+  z-index: 4;
+  top: 15%;
+  left: 1%;
+  margin-top: 7px;
+  width: 97%;
+  height: 80%;
+  background-color: var(--ter1);
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px var(--pri);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  scrollbar-width: none;
+}
+.goal-fullpage .goals-wrapper .goal-cards {
+  margin: 10px;
+  width: 22%;
+  height: 42%;
+  background-color: var(--pri);
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px var(--sec);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.goal-fullpage .goals-wrapper .goal-cards .upper {
+  width: 100%;
+  height: 30%;
+  background-color: var(--sec);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 1px 1px var(--ter1);
+}
+.goal-fullpage .goals-wrapper .goal-cards .upper p {
+  width: 20px;
+  height: 20px;
+  background-color: var(--ter2);
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px var(--ter1);
+}
+.goal-fullpage .goals-wrapper .goal-cards input {
+  margin-left: 12px;
+  margin-top: 10px;
+  font-size: 22px;
+  padding: 10px 10px;
+  width: 90%;
+  height: 12%;
+  border-radius: 9px;
+  border: none;
+  background-color: var(--sec);
+  color: var(--ter2);
+  border: 1px solid var(--ter2);
+  box-shadow: 2px 2px 5px var(--pri);
+  outline: none;
+  overflow: auto;
+  scrollbar-width: none;
+  margin-bottom: 0px;
+}
+.goal-fullpage .goals-wrapper .goal-cards input::-webkit-scrollbar {
+  display: none;
+}
+.goal-fullpage .goals-wrapper .goal-cards input::-moz-placeholder {
+  opacity: 0.47;
+  font-weight: 300;
+}
+.goal-fullpage .goals-wrapper .goal-cards input::placeholder {
+  opacity: 0.47;
+  font-weight: 300;
+}
+.goal-fullpage .goals-wrapper .goal-cards input:hover {
+  background-color: var(--sec);
+  border: 2px solid var(--ter2);
+  transition: 0.2s ease-in-out;
+}
+.goal-fullpage .goals-wrapper .goal-cards textarea {
+  width: 90%;
+  margin-left: 12px;
+  color: var(--ter2);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid var(--ter2);
+  box-shadow: 2px 2px 5px var(--pri);
+  background-color: var(--sec);
+  resize: none;
+  margin-bottom: 0px;
+  font-size: 14px;
+  overflow: auto;
+  scrollbar-width: none;
+}
+.goal-fullpage .goals-wrapper .goal-cards textarea::-webkit-scrollbar {
+  display: none;
+}
+.goal-fullpage .goals-wrapper .goal-cards textarea:hover {
+  background-color: var(--sec);
+  border: 2px solid var(--ter2);
+  transition: 0.2s ease-in-out;
+}
+.goal-fullpage .goals-wrapper .goal-cards textarea::-moz-placeholder {
+  opacity: 0.47;
+  font-weight: 300;
+}
+.goal-fullpage .goals-wrapper .goal-cards textarea::placeholder {
+  opacity: 0.47;
+  font-weight: 300;
+}
+.goal-fullpage .goals-wrapper .goal-cards:hover {
+  scale: 0.99;
+}
+.goal-fullpage::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  width: 80%;
+  height: 60%;
+  top: 30%;
+  left: 5%;
+  background-color: var(--sec);
+  filter: blur(100px);
+  transform: scale(1.1);
+}/*# sourceMappingURL=style.css.map */

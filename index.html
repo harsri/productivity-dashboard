@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Dashboard</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+
+        <section class="allelems">
+            <div class="nav">
+                <h1>PRODUCTIVITY DASHBOARD</h1>
+                <div class="buttons-right">
+                    <button class="theme">Change Theme</button>
+                    <button class="dark-light"><img src="./assets/light-sign-sun.png" alt=""></button>
+                </div>
+            </div>
+            <div class="upper-main">
+                <!--                 
+                <div class="header-left">
+                    <h1>Saturday, 1:00 PM</h1>
+                    <h2>Nov. 01 2025</h2>
+                    <h3>Nagpur (MH)</h3>
+                </div>
+                <div class="header-right">
+                    <div class="des">
+                        <h1>28°C</h1>
+                        <img src="//cdn.weatherapi.com/weather/64x64/day/176.png" alt="">
+                    </div>
+                    <h2>Partly Sunny</h2>
+                    <h3>Humidity: 75%</h3>
+                    <h3>Wind: 5 km/h</h3>
+                </div> 
+                -->
+            </div>
+            <div class="lower-main">
+                <div class="func todo" id="0">
+                    <img src="./assets/bg1.jpg" alt="">
+                    <h2>To Do List</h2>
+                </div>
+
+                <div class="func daily" id="1">
+                    <img src="./assets/bg2.jpg" alt="">
+                    <h2>Planner</h2>
+                </div>
+
+                <div class="func moti" id="2">
+                    <img src="./assets/bg3.jpg" alt="">
+                    <h2>Motivation</h2>
+                </div>
+
+                <div class="func pomo" id="3">
+                    <img src="./assets/bg4.jpg" alt="">
+                    <h2>Pomodoro</h2>
+                </div>
+
+                <div class="func goal" id="4">
+                    <img src="./assets/bg5.jpg" alt="">
+                    <h2>Goals</h2>
+                </div>
+            </div>
+
+        </section>
+        <section class="fullelems todo-fullpage">
+            <button class="button" id="0">Close</button>
+            <div id="upper">
+                <h2>Your Personalized Task List</h2>
+                <div id="det">
+                    <h4 id="totalPending">Total Task Pending : -</h4>
+                    <h4 id="importantPending">Imp. Task Pending : -</h4>
+                </div>
+            </div>
+            <div class="todo-container">
+                <div class="addTask">
+                    <form>
+                        <input type="text" placeholder="Enter Task">
+                        <textarea name="" id="" cols="20" rows="16" placeholder="Enter Description"></textarea>
+                        <div class="imp-sub">
+                            <div class="mark-imp">
+                                <input type="checkbox" name="" id="check">
+                                <label for="check">Mark as Imp.</label>
+                            </div>
+                            <button type="submit">Add Task</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="allTask">
+                    <h1 id="empty">No Task Added Yet</h1>
+                    <!-- 
+                    <div class="tasks" id="0">
+                        <h3>Title</h3>
+                        <p>Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="ending">
+                            <svg class="imp-icon-true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#89646c">
+                                <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                            </svg>
+                            <button class="but-true"></button>
+                        </div>
+                    </div>
+                     -->
+                </div>
+            </div>
+        </section>
+        <section class="fullelems planner-fullpage">
+            <button class="button" id="1">Close</button>
+            <h2>Daily Task Planner</h2>
+            <div class="day-planner">
+                <!--                 
+                <div class="day-planner-time">
+                    <p>6:00 - 7:00</p>
+                    <input type="text" placeholder="...">
+                </div> 
+                -->
+            </div>
+        </section>
+        <section class="fullelems motivation-fullpage">
+            <button class="button" id="2">Close</button>
+            <h2>Motivational Quote</h2>
+            <div class="motivation-wrapper">
+                <!-- 
+                <div class="motivation-card">
+                    <div class="m1">
+                        <h2>Quote of the day</h2>
+                        <img src="assets/quotation.png" alt="quotation">
+                    </div>
+                    <div class="m2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. sit amet consectetu sit amet consectetu Neque, possimus?</p></div>
+                    <div class="m3"><h3>- Lorem, ipsum.</h3></div>
+                </div>
+                 -->
+            </div>
+        </section>
+        <section class="fullelems pomodoro-fullpage">
+            <button class="button" id="3">Close</button>
+            <h2>Pomodoro Timer</h2>
+            <div class="pomo-timer">
+                <div class="wrapped">
+                    <div class="dummy">
+                        <h3>Work Time Left !</h3>
+                    </div>
+                    <h1>25:00</h1>
+                    <div class="but">
+                        <button class="play-pause ctrl"><img src="assets/play.png" alt="play-pause"></button>
+                        <button class="restart ctrl"><img src="assets/restart.png" alt="restart"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fullelems goal-fullpage">
+            <button class="button" id="4">Close</button>
+            <h2>Life Goals</h2>
+            <div class="goals-wrapper">
+                <!-- 
+                <div id="0" class="goal-cards">
+                    <div class="upper">
+                        <p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
+                    </div>
+                    <div class="lower">
+                        <input type="text" placeholder="Title">
+                        <textarea name="" id="" rows="4" placeholder="Desc."></textarea>
+                    </div>
+                </div>
+                 -->
+            </div>
+        </section>
+    </div>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
